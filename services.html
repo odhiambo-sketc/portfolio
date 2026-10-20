@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Campaign Architect</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+        body {
+            background-color: #0E0E0E;
+            color: #E0E0E0;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid #222;
+        }
+
+        .nav h1 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #fff;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .nav-links a {
+            color: #E0E0E0;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-left: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #0F4C5C;
+        }
+
+        h1.page-title {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .subhead {
+            font-size: 1.2rem;
+            color: #B0B0B0;
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #fff;
+            margin-top: 4rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            border-bottom: 1px solid #333;
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: #fff;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .service-detail {
+            background-color: #151515;
+            border: 1px solid #222;
+            padding: 2.5rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+        }
+
+        .price-tag {
+            font-size: 1.3rem;
+            color: #0F4C5C;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .deliverable-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 2rem;
+        }
+
+        .deliverable-list li {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        .deliverable-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #0F4C5C;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        a.cta-button {
+            display: inline-block;
+            background-color: #0F4C5C;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+        }
+
+        a.cta-button:hover {
+            background-color: #0B3A47;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #222;
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <h1><a href="index.html" style="color:#fff; text-decoration:none;">CAMPAIGN ARCHITECT</a></h1>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="mailto:hello@campaignarchitect.qzz.io">Contact</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="page-title">Services</h1>
+        <p class="subhead">Three ways to fix the message that's leaking your traffic. Start with the diagnosis, or go straight to the rewrite.</p>
+
+        <!-- SERVICE 1 -->
+        <div class="service-detail">
+            <h3>Page Teardown</h3>
+            <span class="price-tag">$75</span>
+            <p>Before you spend money rewriting anything, find out if the page is actually the problem. I record a 5–8 minute video walking through your page, naming the three biggest conversion killers, and telling you exactly what I'd change.</p>
+            <p><strong>What you get:</strong></p>
+            <ul class="deliverable-list">
+                <li>A Loom video recording delivered within 24 hours</li>
+                <li>The 3 biggest conversion killers on your page</li>
+                <li>Specific, actionable fixes (not just theory)</li>
+                <li>The honest answer: is a rewrite actually worth it?</li>
+            </ul>
+            <a href="mailto:hello@campaignarchitect.qzz.io?subject=I%20want%20a%20teardown" class="cta-button">Get a Teardown</a>
+        </div>
+
+        <!-- SERVICE 2 -->
+        <div class="service-detail">
+            <h3>Services Page Rewrite</h3>
+            <span class="price-tag">$300</span>
+            <p>I rewrite one existing page so it finally says what the right buyer needs to hear. This isn't a redesign. It's a surgical rewrite of the words that matter.</p>
+            <p><strong>What you get:</strong></p>
+            <ul class="deliverable-list">
+                <li>A complete rewrite of one page (Hero, Offer, Proof, Objections, CTA, FAQ)</li>
+                <li>Paste-ready copy, delivered in a clean Google Doc within 72 hours</li>
+                <li>One round of revisions included</li>
+                <li>No design or dev required—just copy and paste</li>
+            </ul>
+            <p style="font-size: 0.9rem; color: #888;"><em>Note: This is for existing pages only. If you need a new page built from scratch, reply to the email and we'll discuss a custom scope.</em></p>
+            <a href="mailto:hello@campaignarchitect.qzz.io?subject=I%20want%20a%20page%20rewrite" class="cta-button">Get a Rewrite</a>
+        </div>
+
+        <!-- SERVICE 3 -->
+        <div class="service-detail">
+            <h3>Long-Form Sales Letter</h3>
+            <span class="price-tag">$500+</span>
+            <p>For founders launching a new offer or fixing a page that carries real ad spend. This is the source of truth document. Once it's written, every ad, email, and landing page extracts from it.</p>
+            <p><strong>What you get:</strong></p>
+            <ul class="deliverable-list">
+                <li>A complete long-form sales letter (9,000+ words if the offer requires it)</li>
+                <li>Built using the 7 Building Blocks and the Dodson Energetic Scale</li>
+                <li>Aligned to your buyer's specific awareness level</li>
+                <li>Designed to become the foundation for your entire funnel</li>
+            </ul>
+            <p style="font-size: 0.9rem; color: #888;"><em>Note: Due to the depth of research required, I only take a limited number of these per month.</em></p>
+            <a href="mailto:hello@campaignarchitect.qzz.io?subject=I%20want%20a%20sales%20letter" class="cta-button">Enquire About a Letter</a>
+        </div>
+
+        <h2>Why start with the message?</h2>
+        <p>Most agencies will sell you more traffic, a new design, or a complicated funnel. But if the message is broken, more traffic just means more people leaving.</p>
+        <p>I fix the message first. The design and the traffic come after, once we know the words actually work.</p>
+
+        <div class="footer">
+            <p>Odhiambo Isaya — Campaign Architect<br>
+            <a href="mailto:hello@campaignarchitect.qzz.io" style="color: #888; text-decoration: none;">hello@campaignarchitect.qzz.io</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
