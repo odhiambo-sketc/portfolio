@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services | Campaign Architect</title>
+    <meta name="description" content="Page teardown ($75), page rewrite ($300), and long-form sales letters ($500+) for B2B agencies, consultants, and SaaS founders.">
+    <meta property="og:title" content="Services | Campaign Architect">
+    <meta property="og:description" content="Page teardown ($75), page rewrite ($300), and long-form sales letters ($500+) for B2B services.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+        :root {
+            --teal-text: #3FA7BF;
+            --teal-bg: #0F4C5C;
+            --teal-bg-hover: #0B3A47;
+        }
 
         body {
             background-color: #0E0E0E;
@@ -16,12 +27,6 @@
             line-height: 1.7;
         }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-
         .nav {
             display: flex;
             justify-content: space-between;
@@ -30,11 +35,11 @@
             border-bottom: 1px solid #222;
         }
 
-        .nav h1 {
+        .brand {
             font-size: 1.2rem;
             font-weight: 700;
             color: #fff;
-            margin: 0;
+            text-decoration: none;
             letter-spacing: 1px;
         }
 
@@ -48,7 +53,13 @@
         }
 
         .nav-links a:hover {
-            color: #0F4C5C;
+            color: var(--teal-text);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
         }
 
         h1.page-title {
@@ -56,6 +67,7 @@
             color: #fff;
             margin-bottom: 1rem;
             font-weight: 700;
+            line-height: 1.2;
         }
 
         .subhead {
@@ -97,7 +109,7 @@
 
         .price-tag {
             font-size: 1.3rem;
-            color: #0F4C5C;
+            color: var(--teal-text);
             font-weight: 700;
             margin-bottom: 1.5rem;
             display: block;
@@ -113,20 +125,33 @@
             margin-bottom: 1rem;
             padding-left: 2rem;
             position: relative;
+            font-size: 1.05rem;
         }
 
         .deliverable-list li::before {
             content: "✓";
             position: absolute;
             left: 0;
-            color: #0F4C5C;
+            color: var(--teal-text);
             font-weight: bold;
             font-size: 1.2rem;
         }
 
+        .fine-print {
+            font-size: 0.95rem;
+            color: #999;
+            border-top: 1px solid #222;
+            padding-top: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .fine-print strong {
+            color: #ccc;
+        }
+
         a.cta-button {
             display: inline-block;
-            background-color: #0F4C5C;
+            background-color: var(--teal-bg);
             color: #fff;
             padding: 1rem 2rem;
             text-decoration: none;
@@ -137,7 +162,17 @@
         }
 
         a.cta-button:hover {
-            background-color: #0B3A47;
+            background-color: var(--teal-bg-hover);
+        }
+
+        a.text-link {
+            color: var(--teal-text);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a.text-link:hover {
+            text-decoration: underline;
         }
 
         .footer {
@@ -148,15 +183,48 @@
             color: #888;
             font-size: 0.9rem;
         }
+
+        .footer a {
+            color: #888;
+            text-decoration: none;
+            overflow-wrap: anywhere;
+        }
+
+        @media (max-width: 600px) {
+            .nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.75rem;
+                padding: 1.25rem 1.5rem;
+            }
+            .nav-links a {
+                margin: 0 1rem 0 0;
+            }
+            .container {
+                padding: 2.5rem 1.5rem;
+            }
+            h1.page-title {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            .service-detail {
+                padding: 1.75rem 1.25rem;
+            }
+        }
     </style>
 </head>
 <body>
 
     <div class="nav">
-        <h1><a href="index.html" style="color:#fff; text-decoration:none;">CAMPAIGN ARCHITECT</a></h1>
+        <a href="index.html" class="brand">CAMPAIGN ARCHITECT</a>
         <div class="nav-links">
             <a href="index.html">Home</a>
-            <a href="mailto:hello@campaignarchitect.qzz.io">Contact</a>
+            <a href="services.html">Services</a>
+            <a href="proof.html">Proof</a>
+            <a href="method.html">Method</a>
+            <a href="contact.html">Contact</a>
         </div>
     </div>
 
@@ -164,60 +232,68 @@
         <h1 class="page-title">Services</h1>
         <p class="subhead">Three ways to fix the message that's leaking your traffic. Start with the diagnosis, or go straight to the rewrite.</p>
 
-        <!-- SERVICE 1 -->
         <div class="service-detail">
             <h3>Page Teardown</h3>
             <span class="price-tag">$75</span>
-            <p>Before you spend money rewriting anything, find out if the page is actually the problem. I record a 5–8 minute video walking through your page, naming the three biggest conversion killers, and telling you exactly what I'd change.</p>
+            <p>Before you spend money rewriting anything, find out if the page is actually the problem. I record a short video walking through your page, naming the three biggest conversion killers, and telling you exactly what I'd change.</p>
             <p><strong>What you get:</strong></p>
             <ul class="deliverable-list">
-                <li>A Loom video recording delivered within 24 hours</li>
-                <li>The 3 biggest conversion killers on your page</li>
-                <li>Specific, actionable fixes (not just theory)</li>
-                <li>The honest answer: is a rewrite actually worth it?</li>
+                <li>A recorded video delivered within 24 hours</li>
+                <li>The three biggest conversion killers on your page</li>
+                <li>Specific, actionable fixes</li>
+                <li>A straight answer on whether a rewrite is worth it</li>
             </ul>
-            <a href="mailto:hello@campaignarchitect.qzz.io?subject=I%20want%20a%20teardown" class="cta-button">Get a Teardown</a>
+            <div class="fine-print">
+                <strong>Risk reversal:</strong> If the teardown doesn't show you something worth $75, I'll refund it. If you commission a rewrite within 14 days, the $75 comes off the price.
+            </div>
+            <a href="mailto:hello@campaignarchitect.qzz.io?subject=Page%20Teardown" class="cta-button">Get a Teardown</a>
         </div>
 
-        <!-- SERVICE 2 -->
         <div class="service-detail">
-            <h3>Services Page Rewrite</h3>
+            <h3>Page Rewrite</h3>
             <span class="price-tag">$300</span>
-            <p>I rewrite one existing page so it finally says what the right buyer needs to hear. This isn't a redesign. It's a surgical rewrite of the words that matter.</p>
+            <p>I rewrite one existing page so it says what the right buyer needs to hear. This isn't a redesign. It's a rewrite of the words that matter.</p>
             <p><strong>What you get:</strong></p>
             <ul class="deliverable-list">
-                <li>A complete rewrite of one page (Hero, Offer, Proof, Objections, CTA, FAQ)</li>
-                <li>Paste-ready copy, delivered in a clean Google Doc within 72 hours</li>
+                <li>A complete rewrite of one page: hero, offer, proof, objections, call to action, FAQ</li>
+                <li>Paste-ready copy, delivered in a shared document within 72 hours</li>
                 <li>One round of revisions included</li>
-                <li>No design or dev required—just copy and paste</li>
+                <li>No design or development required</li>
             </ul>
-            <p style="font-size: 0.9rem; color: #888;"><em>Note: This is for existing pages only. If you need a new page built from scratch, reply to the email and we'll discuss a custom scope.</em></p>
-            <a href="mailto:hello@campaignarchitect.qzz.io?subject=I%20want%20a%20page%20rewrite" class="cta-button">Get a Rewrite</a>
+            <div class="fine-print">
+                <strong>What I need from you:</strong> the page URL, one sentence on who it's for, and the single action you want a visitor to take. A short intake form handles the rest.<br><br>
+                <strong>Payment:</strong> 50% to start, 50% on delivery. Bank transfer or Wise.<br><br>
+                <strong>Scope:</strong> existing pages only. If you need a page built from scratch, email me and we'll scope it separately.
+            </div>
+            <a href="mailto:hello@campaignarchitect.qzz.io?subject=Page%20Rewrite" class="cta-button">Get a Rewrite</a>
         </div>
 
-        <!-- SERVICE 3 -->
         <div class="service-detail">
-            <h3>Long-Form Sales Letter</h3>
+            <h3>Sales Letter</h3>
             <span class="price-tag">$500+</span>
-            <p>For founders launching a new offer or fixing a page that carries real ad spend. This is the source of truth document. Once it's written, every ad, email, and landing page extracts from it.</p>
+            <p>For founders launching a new offer or fixing a page that carries real ad spend. This is the source of truth. Once it's written, every ad, email, and landing page extracts from it.</p>
             <p><strong>What you get:</strong></p>
             <ul class="deliverable-list">
-                <li>A complete long-form sales letter (9,000+ words if the offer requires it)</li>
-                <li>Built using the 7 Building Blocks and the Dodson Energetic Scale</li>
-                <li>Aligned to your buyer's specific awareness level</li>
-                <li>Designed to become the foundation for your entire funnel</li>
+                <li>A complete long-form sales letter</li>
+                <li>Built on research into your buyer and their awareness level</li>
+                <li>Designed to become the foundation for your whole funnel</li>
+                <li>One round of revisions included</li>
             </ul>
-            <p style="font-size: 0.9rem; color: #888;"><em>Note: Due to the depth of research required, I only take a limited number of these per month.</em></p>
-            <a href="mailto:hello@campaignarchitect.qzz.io?subject=I%20want%20a%20sales%20letter" class="cta-button">Enquire About a Letter</a>
+            <div class="fine-print">
+                <strong>Price range:</strong> $500–$1,500 depending on the offer and research required. You'll get a fixed quote before anything starts.<br><br>
+                <strong>Timeline:</strong> 5–10 business days from intake.<br><br>
+                <strong>Availability:</strong> I write one sales letter at a time. Email me for the current start date.
+            </div>
+            <a href="mailto:hello@campaignarchitect.qzz.io?subject=Sales%20Letter" class="cta-button">Enquire About a Letter</a>
         </div>
 
-        <h2>Why start with the message?</h2>
-        <p>Most agencies will sell you more traffic, a new design, or a complicated funnel. But if the message is broken, more traffic just means more people leaving.</p>
-        <p>I fix the message first. The design and the traffic come after, once we know the words actually work.</p>
+        <h2>Not sure which one?</h2>
+        <p>Start with the teardown. It's the cheapest way to find out whether the page is the problem, and it tells you which of the other two is actually worth buying.</p>
+        <p><a href="contact.html" class="text-link">Ask me a question first →</a></p>
 
         <div class="footer">
             <p>Odhiambo Isaya — Campaign Architect<br>
-            <a href="mailto:hello@campaignarchitect.qzz.io" style="color: #888; text-decoration: none;">hello@campaignarchitect.qzz.io</a></p>
+            <a href="mailto:hello@campaignarchitect.qzz.io">hello@campaignarchitect.qzz.io</a></p>
         </div>
     </div>
 
