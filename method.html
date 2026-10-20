@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Method | Campaign Architect</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+        body {
+            background-color: #0E0E0E;
+            color: #E0E0E0;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid #222;
+        }
+
+        .nav h1 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #fff;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .nav-links a {
+            color: #E0E0E0;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-left: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #0F4C5C;
+        }
+
+        h1.page-title {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .subhead {
+            font-size: 1.2rem;
+            color: #B0B0B0;
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #fff;
+            margin-top: 4rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            border-bottom: 1px solid #333;
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            color: #fff;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .step-box {
+            background-color: #151515;
+            border: 1px solid #222;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .step-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            line-height: 1;
+        }
+
+        .step-box h3 {
+            margin-top: 0;
+            color: #0F4C5C;
+        }
+
+        .pillar-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .pillar-card {
+            background: #151515;
+            padding: 1.5rem;
+            border-radius: 6px;
+            border: 1px solid #222;
+        }
+
+        .pillar-card h4 {
+            color: #fff;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .pillar-card p {
+            font-size: 0.95rem;
+            color: #B0B0B0;
+            margin-bottom: 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #222;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .pillar-grid {
+                grid-template-columns: 1fr;
+            }
+            h1.page-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <h1><a href="index.html" style="color:#fff; text-decoration:none;">CAMPAIGN ARCHITECT</a></h1>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="proof.html">Proof</a>
+            <a href="mailto:hello@campaignarchitect.qzz.io">Contact</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="page-title">The Method</h1>
+        <p class="subhead">Every project follows the same 3-step system. It's based on the 7 Building Blocks, the Dodson Energetic Scale, and the principle of Messaging Alignment. Here's how it works.</p>
+
+        <h2>The 3-Step System</h2>
+
+        <div class="step-box">
+            <span class="step-number">01</span>
+            <h3>Intelligence</h3>
+            <p>Before I write a single word, I need to understand three things:</p>
+            <ul style="margin-bottom: 0; padding-left: 1.5rem;">
+                <li><strong>Who is starving?</strong> Who is the specific avatar with the urgent pain?</li>
+                <li><strong>Where does the market live?</strong> What is their level of sophistication (1-5)?</li>
+                <li><strong>How much do they know?</strong> Are they Clueless, Problem Aware, Solution Aware, Product Aware, or Most Aware?</li>
+            </ul>
+            <p style="margin-top: 1rem; margin-bottom: 0;">If you don't know where the reader is, you can't write the page that picks them up and moves them forward. I do this research myself. I don't guess.</p>
+        </div>
+
+        <div class="step-box">
+            <span class="step-number">02</span>
+            <h3>Invention</h3>
+            <p>Once I know the avatar and their awareness level, I lock the 7 Building Blocks. This is the DNA of the offer.</p>
+            <div class="pillar-grid">
+                <div class="pillar-card">
+                    <h4>Big Problem</h4>
+                    <p>The specific, urgent pain.</p>
+                </div>
+                <div class="pillar-card">
+                    <h4>Big Idea</h4>
+                    <p>The new concept or reframe.</p>
+                </div>
+                <div class="pillar-card">
+                    <h4>Irresistible Offer</h4>
+                    <p>Value > Price.</p>
+                </div>
+                <div class="pillar-card">
+                    <h4>USP</h4>
+                    <p>What you have that no one else does.</p>
+                </div>
+                <div class="pillar-card">
+                    <h4>Big Promise</h4>
+                    <p>The emotional outcome.</p>
+                </div>
+                <div class="pillar-card">
+                    <h4>Unique Mechanism</h4>
+                    <p>The named process that makes it work.</p>
+                </div>
+            </div>
+            <p style="margin-top: 1rem;">I lock the 7th block (Proof) last. If there's no proof, we build a beta offer to get it. No fabricated case studies.</p>
+        </div>
+
+        <div class="step-box">
+            <span class="step-number">03</span>
+            <h3>Writing</h3>
+            <p>Now I write. I use Tej Dosa's exact structure: Headline, Lead, Body (Objections → Selling Points), Close (Two Paths), P.S.</p>
+            <p>Every section must extract from the core message I locked in Step 2. No drift. No waffle. The copy is designed to move the reader from fear/desire to trust/action.</p>
+            <p style="margin-bottom: 0;">I don't use templates or swipe files. I write from scratch, based on the intelligence gathered in Step 1 and the blocks locked in Step 2.</p>
+        </div>
+
+        <h2>The AI Team</h2>
+        <p>I use AI the way a builder uses tools: for leverage, not for shortcuts. Every word that ships is mine, but the AI team helps me move faster and audit deeper.</p>
+        <ul style="margin-bottom: 2rem; padding-left: 1.5rem;">
+            <li><strong>Perplexity:</strong> Market research, competitor analysis, and real pain quotes from forums.</li>
+            <li><strong>NotebookLM:</strong> Voice extraction from existing assets to ensure consistency.</li>
+            <li><strong>DeepSeek:</strong> Drafting and structuring the copy.</li>
+            <li><strong>Claude:</strong> Auditing for voice alignment, energetic bridge, and objection coverage.</li>
+        </ul>
+        <p>The AI is the engine. I am the architect.</p>
+
+        <h2>The Messaging Alignment Principle</h2>
+        <p>A sales letter isn't just a page. It's the source of truth. It defines the one core promise, the emotional journey, and the voice.</p>
+        <p>Every ad, landing page, email, and sales call should extract from it. Without this, messaging drifts. Confusion kills trust. Trust kills sales.</p>
+        <p>Most copywriters sell "better words." I sell alignment. That's what keeps the funnel connected.</p>
+
+        <div class="footer">
+            <p>Odhiambo Isaya — Campaign Architect<br>
+            <a href="mailto:hello@campaignarchitect.qzz.io" style="color: #888; text-decoration: none;">hello@campaignarchitect.qzz.io</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
