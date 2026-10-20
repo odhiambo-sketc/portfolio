@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Campaign Architect</title>
+    <meta name="description" content="Send me the page URL and who it's meant to convert. You'll hear back within one business day.">
+    <meta property="og:title" content="Contact | Campaign Architect">
+    <meta property="og:description" content="Send me the page URL and who it's meant to convert. You'll hear back within one business day.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+        :root {
+            --teal-text: #3FA7BF;
+            --teal-bg: #0F4C5C;
+            --teal-bg-hover: #0B3A47;
+        }
 
         body {
             background-color: #0E0E0E;
@@ -16,12 +27,6 @@
             line-height: 1.7;
         }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-
         .nav {
             display: flex;
             justify-content: space-between;
@@ -30,11 +35,11 @@
             border-bottom: 1px solid #222;
         }
 
-        .nav h1 {
+        .brand {
             font-size: 1.2rem;
             font-weight: 700;
             color: #fff;
-            margin: 0;
+            text-decoration: none;
             letter-spacing: 1px;
         }
 
@@ -48,7 +53,13 @@
         }
 
         .nav-links a:hover {
-            color: #0F4C5C;
+            color: var(--teal-text);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
         }
 
         h1.page-title {
@@ -56,6 +67,7 @@
             color: #fff;
             margin-bottom: 1rem;
             font-weight: 700;
+            line-height: 1.2;
         }
 
         .subhead {
@@ -67,7 +79,7 @@
         h2 {
             font-size: 1.8rem;
             color: #fff;
-            margin-top: 3rem;
+            margin-top: 3.5rem;
             margin-bottom: 1.5rem;
             font-weight: 600;
             border-bottom: 1px solid #333;
@@ -82,10 +94,9 @@
         .contact-card {
             background-color: #151515;
             border: 1px solid #222;
-            padding: 3rem;
+            padding: 3rem 2rem;
             border-radius: 8px;
             text-align: center;
-            margin-bottom: 3rem;
         }
 
         .contact-card h3 {
@@ -95,15 +106,22 @@
             margin-bottom: 1rem;
         }
 
+        .contact-card p {
+            max-width: 520px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         .email-link {
             display: inline-block;
-            font-size: 1.4rem;
-            color: #0F4C5C;
+            font-size: 1.35rem;
+            color: var(--teal-text);
             font-weight: 700;
             text-decoration: none;
             margin: 1rem 0 2rem 0;
-            border-bottom: 2px solid #0F4C5C;
+            border-bottom: 2px solid var(--teal-text);
             padding-bottom: 0.2rem;
+            overflow-wrap: anywhere;
             transition: color 0.3s, border-color 0.3s;
         }
 
@@ -112,29 +130,58 @@
             border-color: #fff;
         }
 
-        .what-happens-next {
+        .next-steps {
             text-align: left;
-            margin-top: 2rem;
+            margin-top: 1.5rem;
             background: #0E0E0E;
-            padding: 1.5rem;
+            padding: 1.5rem 1.75rem;
             border-radius: 6px;
             border: 1px solid #222;
         }
 
-        .what-happens-next h4 {
+        .next-steps h4 {
             color: #fff;
             margin-top: 0;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
         }
 
-        .what-happens-next ol {
+        .next-steps ol {
             margin: 0;
-            padding-left: 1.5rem;
+            padding-left: 1.25rem;
             color: #B0B0B0;
         }
 
-        .what-happens-next li {
-            margin-bottom: 0.5rem;
+        .next-steps li {
+            margin-bottom: 0.6rem;
+            font-size: 1rem;
+        }
+
+        .next-steps li:last-child {
+            margin-bottom: 0;
+        }
+
+        .detail-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 2rem;
+        }
+
+        .detail-list li {
+            border-top: 1px solid #222;
+            padding: 1.25rem 0;
+            font-size: 1.05rem;
+        }
+
+        .detail-list li:last-child {
+            border-bottom: 1px solid #222;
+        }
+
+        .detail-list strong {
+            color: #fff;
+            display: inline-block;
+            min-width: 150px;
         }
 
         .footer {
@@ -146,12 +193,44 @@
             font-size: 0.9rem;
         }
 
+        .footer a {
+            color: #888;
+            text-decoration: none;
+            overflow-wrap: anywhere;
+        }
+
         @media (max-width: 600px) {
+            .nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.75rem;
+                padding: 1.25rem 1.5rem;
+            }
+            .nav-links a {
+                margin: 0 1rem 0 0;
+            }
+            .container {
+                padding: 2.5rem 1.5rem;
+            }
             h1.page-title {
                 font-size: 2rem;
             }
+            h2 {
+                font-size: 1.5rem;
+            }
             .contact-card {
-                padding: 2rem 1rem;
+                padding: 2rem 1.25rem;
+            }
+            .email-link {
+                font-size: 1rem;
+            }
+            .next-steps {
+                padding: 1.25rem;
+            }
+            .detail-list strong {
+                display: block;
+                min-width: 0;
+                margin-bottom: 0.25rem;
             }
         }
     </style>
@@ -159,46 +238,49 @@
 <body>
 
     <div class="nav">
-        <h1><a href="index.html" style="color:#fff; text-decoration:none;">CAMPAIGN ARCHITECT</a></h1>
+        <a href="index.html" class="brand">CAMPAIGN ARCHITECT</a>
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
             <a href="proof.html">Proof</a>
             <a href="method.html">Method</a>
+            <a href="contact.html">Contact</a>
         </div>
     </div>
 
     <div class="container">
-        <h1 class="page-title">Let's Fix the Leak.</h1>
-        <p class="subhead">If your traffic isn't converting, or if your ads and your page are telling two different stories, let's look at the message.</p>
+        <h1 class="page-title">Send me the page.</h1>
+        <p class="subhead">If your traffic isn't converting, or your ads and your page are telling two different stories, start here.</p>
 
         <div class="contact-card">
-            <h3>Start with a conversation.</h3>
-            <p>Tell me what you're working on, what's not converting, and what you've tried so far. I read every email myself.</p>
-            
-            <a href="mailto:hello@campaignarchitect.qzz.io?subject=Let's%20talk%20about%20my%20page" class="email-link">hello@campaignarchitect.qzz.io</a>
+            <h3>What to send</h3>
+            <p>The page URL, and one sentence on who it's meant to convert. That's enough for me to look at it properly.</p>
 
-            <div class="what-happens-next">
-                <h4>What happens next?</h4>
+            <a href="mailto:hello@campaignarchitect.qzz.io?subject=Page%20review&body=Page%20URL%3A%20%0AWho%20it's%20meant%20to%20convert%3A%20%0AWhat%20isn't%20working%3A%20" class="email-link">hello@campaignarchitect.qzz.io</a>
+
+            <div class="next-steps">
+                <h4>WHAT HAPPENS NEXT</h4>
                 <ol>
-                    <li><strong>You send the link.</strong> I'll look at your page and your offer.</li>
-                    <li><strong>I reply honestly.</strong> If I think a teardown or rewrite will move the needle, I'll tell you. If I don't, I'll tell you that too.</li>
-                    <li><strong>No pitch.</strong> If it's a fit, we move forward. If it's not, you get free insight from someone who actually looked.</li>
+                    <li>I look at the page and the offer myself.</li>
+                    <li>You hear back within one business day.</li>
+                    <li>If a teardown or rewrite would genuinely help, I'll say so and tell you which one. If it wouldn't, I'll tell you that instead.</li>
                 </ol>
             </div>
         </div>
 
-        <h2>Other places to find me</h2>
-        <p>If you prefer to connect on a different platform, you can find me here:</p>
-        <ul style="margin-bottom: 2rem; padding-left: 1.5rem; font-size: 1.1rem; color: #B0B0B0;">
-            <li><strong>Reddit:</strong> I'm active in r/SaaS, r/nairobitechies, and r/agencynewbies.</li>
-            <li><strong>LinkedIn:</strong> Send a connection request with a note about what you're building.</li>
-            <li><strong>Upwork:</strong> For clients who prefer the platform's payment protection.</li>
+        <h2>Before you write</h2>
+        <ul class="detail-list">
+            <li><strong>Payment</strong>Bank transfer or Wise. For the teardown, payment before recording. For a rewrite, 50% to start and 50% on delivery.</li>
+            <li><strong>Time zone</strong>East Africa Time (UTC+3). I'm usually at my desk early morning and mid-afternoon.</li>
+            <li><strong>LinkedIn</strong>If you'd rather check me out first, connect and send a note about what you're building.</li>
         </ul>
+
+        <h2>Not ready to send the page?</h2>
+        <p>That's fine. If you want to ask a question first — about scope, price, or whether your situation fits — send that instead. Same address, same response time.</p>
 
         <div class="footer">
             <p>Odhiambo Isaya — Campaign Architect<br>
-            <a href="mailto:hello@campaignarchitect.qzz.io" style="color: #888; text-decoration: none;">hello@campaignarchitect.qzz.io</a></p>
+            <a href="mailto:hello@campaignarchitect.qzz.io">hello@campaignarchitect.qzz.io</a></p>
         </div>
     </div>
 
