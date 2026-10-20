@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proof of Work | Campaign Architect</title>
+    <title>Proof | Campaign Architect</title>
+    <meta name="description" content="A live 9,000-word sales letter, the seven-point page audit, and worked examples of public B2B pages.">
+    <meta property="og:title" content="Proof | Campaign Architect">
+    <meta property="og:description" content="A live 9,000-word sales letter, the seven-point page audit, and worked examples.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+        :root {
+            --teal-text: #3FA7BF;
+            --teal-bg: #0F4C5C;
+            --teal-bg-hover: #0B3A47;
+        }
 
         body {
             background-color: #0E0E0E;
@@ -16,12 +27,6 @@
             line-height: 1.7;
         }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-
         .nav {
             display: flex;
             justify-content: space-between;
@@ -30,11 +35,11 @@
             border-bottom: 1px solid #222;
         }
 
-        .nav h1 {
+        .brand {
             font-size: 1.2rem;
             font-weight: 700;
             color: #fff;
-            margin: 0;
+            text-decoration: none;
             letter-spacing: 1px;
         }
 
@@ -48,7 +53,13 @@
         }
 
         .nav-links a:hover {
-            color: #0F4C5C;
+            color: var(--teal-text);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
         }
 
         h1.page-title {
@@ -56,6 +67,7 @@
             color: #fff;
             margin-bottom: 1rem;
             font-weight: 700;
+            line-height: 1.2;
         }
 
         .subhead {
@@ -81,7 +93,7 @@
 
         .proof-box {
             background-color: #151515;
-            border-left: 4px solid #0F4C5C;
+            border-left: 4px solid var(--teal-bg);
             padding: 2rem;
             margin-bottom: 2.5rem;
             border-radius: 0 8px 8px 0;
@@ -94,20 +106,14 @@
             margin-bottom: 1rem;
         }
 
-        .proof-link {
-            display: inline-block;
-            color: #0F4C5C;
-            font-weight: 600;
+        a.text-link {
+            color: var(--teal-text);
             text-decoration: none;
-            margin-top: 1rem;
-            font-size: 1.1rem;
-            border-bottom: 1px solid #0F4C5C;
-            transition: color 0.3s, border-color 0.3s;
+            font-weight: 600;
         }
 
-        .proof-link:hover {
-            color: #fff;
-            border-color: #fff;
+        a.text-link:hover {
+            text-decoration: underline;
         }
 
         .pillar-list {
@@ -121,16 +127,17 @@
 
         .pillar-list li {
             background: #151515;
-            padding: 1rem;
-            border-radius: 4px;
+            padding: 1.25rem;
+            border-radius: 6px;
             font-size: 0.95rem;
             border: 1px solid #222;
         }
 
         .pillar-list strong {
-            color: #0F4C5C;
+            color: var(--teal-text);
             display: block;
-            margin-bottom: 0.2rem;
+            margin-bottom: 0.35rem;
+            font-size: 1rem;
         }
 
         .footer {
@@ -142,12 +149,33 @@
             font-size: 0.9rem;
         }
 
+        .footer a {
+            color: #888;
+            text-decoration: none;
+            overflow-wrap: anywhere;
+        }
+
         @media (max-width: 600px) {
-            .pillar-list {
-                grid-template-columns: 1fr;
+            .nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.75rem;
+                padding: 1.25rem 1.5rem;
+            }
+            .nav-links a {
+                margin: 0 1rem 0 0;
+            }
+            .container {
+                padding: 2.5rem 1.5rem;
             }
             h1.page-title {
                 font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            .pillar-list {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -155,49 +183,55 @@
 <body>
 
     <div class="nav">
-        <h1><a href="index.html" style="color:#fff; text-decoration:none;">CAMPAIGN ARCHITECT</a></h1>
+        <a href="index.html" class="brand">CAMPAIGN ARCHITECT</a>
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
-            <a href="mailto:hello@campaignarchitect.qzz.io">Contact</a>
+            <a href="proof.html">Proof</a>
+            <a href="method.html">Method</a>
+            <a href="contact.html">Contact</a>
         </div>
     </div>
 
     <div class="container">
-        <h1 class="page-title">Proof of Work</h1>
-        <p class="subhead">I don't show made-up case studies or rounded-up results. I show my own work, my own thinking, and the system I use on every project.</p>
+        <h1 class="page-title">Proof</h1>
+        <p class="subhead">A work sample you can read in full, the audit I run on every page, and worked examples you can judge for yourself.</p>
 
-        <h2>The Primary Evidence</h2>
+        <h2>The work sample</h2>
         <div class="proof-box">
-            <h3>Campaign Architect: The Sales Letter</h3>
-            <p>I built my own product first. Wrote the sales letter, launched it, watched it fail, and spent months working out why. The product was never the problem. The words were.</p>
-            <p>A 9,000+ word sales letter, written from scratch and published for a live offer. It uses the same structure I apply to client pages: headline, lead, body, objections, close.</p>
+            <h3>A live, 9,000-word sales letter</h3>
+            <p>I wrote this from scratch for my own offer and published it live. It uses the same structure I apply to client pages: headline, lead, body, objections, close.</p>
             <p>Read it as a work sample. The thinking is visible on every page.</p>
+            <a href="https://campaignarchitect.qzz.io" class="text-link" target="_blank" rel="noopener">Read the live sales letter →</a>
         </div>
 
-        <h2>The Diagnostic Framework</h2>
-        <p>When I look at a page, I don't guess. I run it through a 7-point audit. Most pages fail on at least three of these pillars. Finding out which three is the first step to fixing the leak.</p>
-        
+        <h2>The seven-point audit</h2>
+        <p>Every page I look at gets scored against the same seven pillars. Most pages are strong on two or three and weak on the rest. Finding the weak ones is the work.</p>
+
         <ul class="pillar-list">
-            <li><strong>1. Big Problem</strong>Does the page name the specific pain?</li>
-            <li><strong>2. Big Idea</strong>Is there a reframe that changes perspective?</li>
-            <li><strong>3. Irresistible Offer</strong>Is the value clearly greater than the price?</li>
-            <li><strong>4. USP Clarity</strong>Is the unique mechanism obvious?</li>
-            <li><strong>5. Big Promise</strong>Is the outcome specific and time-bound?</li>
-            <li><strong>6. Unique Mechanism</strong>Is the "how" visible and named?</li>
-            <li><strong>7. Proof</strong>Is there evidence that builds trust?</li>
-            <li><strong>+ Energetic Handshake</strong>Does it meet the reader where they are?</li>
+            <li><strong>1. Big Problem</strong>Does the page name the specific pain the buyer already feels?</li>
+            <li><strong>2. Big Idea</strong>Is there a reframe that changes how they see the solution?</li>
+            <li><strong>3. Irresistible Offer</strong>Is what they get clearly worth more than the price?</li>
+            <li><strong>4. USP</strong>Is it obvious what you have that competitors don't?</li>
+            <li><strong>5. Big Promise</strong>Is the outcome specific, and is there a timeframe?</li>
+            <li><strong>6. Unique Mechanism</strong>Is the how visible and named, or left to the reader to guess?</li>
+            <li><strong>7. Proof</strong>Is there evidence that a skeptical buyer would accept?</li>
         </ul>
 
-        <h2>Client Work (In Progress)</h2>
-        <h2>Worked Examples</h2>
+        <p><a href="services.html" class="text-link">See the teardown offer →</a></p>
+
+        <h2>Worked examples</h2>
         <p>Unsolicited teardowns of public B2B pages. Each one shows the original hero, the exact problem I identified, and a rewritten version showing what I'd change and why.</p>
         <p>These are not client engagements. They are my thinking, made public so you can judge the work before you hire me.</p>
         <p><em>First teardowns publishing shortly.</em></p>
 
+        <h2>What I don't have</h2>
+        <p>Client case studies with verified revenue numbers. Not yet. When I do, they'll appear here with the client's permission and the numbers they're willing to share.</p>
+        <p>Until then, the work sample and the teardowns are what you have to judge. That's the honest position.</p>
+
         <div class="footer">
             <p>Odhiambo Isaya — Campaign Architect<br>
-            <a href="mailto:hello@campaignarchitect.qzz.io" style="color: #888; text-decoration: none;">hello@campaignarchitect.qzz.io</a></p>
+            <a href="mailto:hello@campaignarchitect.qzz.io">hello@campaignarchitect.qzz.io</a></p>
         </div>
     </div>
 
