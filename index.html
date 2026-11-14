@@ -125,6 +125,9 @@ footer a{color:var(--muted);margin-left:18px}
 .js .panel.in .r,.js .g2.in .it{opacity:1;transform:none}
 .js .letter,.js .price{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}
 .js .letter.in,.js .price.in{opacity:1;transform:none}
+.sl{display:flex;justify-content:space-between;font-size:.88rem;font-weight:600;margin:16px 0 4px}
+.panel input[type=range]{width:100%;accent-color:var(--green);margin:0}
+.calc .r{margin-top:10px}
 @media (max-width:820px){
  .row,.offer,.faq,.g2{grid-template-columns:1fr;gap:28px}
  .row{padding:52px 0}.row.rev .mw{order:0}
@@ -229,6 +232,29 @@ footer a{color:var(--muted);margin-left:18px}
   </div>
  </section>
 </div>
+
+<section class="band" id="numbers">
+ <div class="w offer calc">
+  <div>
+   <h2>Run your own numbers</h2>
+   <p class="sub" style="margin-top:22px">You don’t need a forecast to judge this. You need to know how many retained clients would cover the setup fee. Move the sliders and see.</p>
+   <p class="fine">This is arithmetic on your own figures. It does not predict results, and it does not promise that any client will retain.</p>
+  </div>
+  <div class="panel" aria-live="polite">
+   <h4>Your firm <span class="tag">Calculator</span></h4>
+   <label class="sl" for="cl"><span>Compliance-only clients</span><span id="clv">150</span></label>
+   <input id="cl" type="range" min="80" max="400" step="10" value="150">
+   <label class="sl" for="fe"><span>Advisory retainer per month</span><span id="fev">$400</span></label>
+   <input id="fe" type="range" min="200" max="1500" step="50" value="400">
+   <label class="sl" for="rt"><span>Clients who retain</span><span id="rtv">2</span></label>
+   <input id="rt" type="range" min="1" max="10" step="1" value="2">
+   <div class="r m"><b>Share of your list</b><span class="tag" id="o1"></span></div>
+   <div class="r b"><b>Added revenue per year</b><span class="tag" id="o2"></span></div>
+   <div class="r l"><b>Covers the $3,500 fee in</b><span class="tag" id="o3"></span></div>
+   <div class="r p"><b>Covers the $2,500 founding rate in</b><span class="tag" id="o4"></span></div>
+  </div>
+ </div>
+</section>
 
 <section class="band">
  <div class="w">
@@ -358,6 +384,21 @@ footer a{color:var(--muted);margin-left:18px}
   if(x.isIntersecting){x.target.classList.add('in');var c=x.target.querySelector('.count');if(c)count(c);io.unobserve(x.target)}
  })},{threshold:.2});
  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+<script>
+(function(){
+ var g=function(i){return document.getElementById(i)};
+ function run(){
+  var c=+g('cl').value,f=+g('fe').value,n=+g('rt').value,y=n*f*12,m=function(x){return (Math.round(x*10)/10)+' mo'};
+  g('clv').textContent=c;g('fev').textContent='$'+f;g('rtv').textContent=n;
+  g('o1').textContent=(n/c*100).toFixed(1)+'%';
+  g('o2').textContent='$'+y.toLocaleString('en-US');
+  g('o3').textContent=m(3500/(n*f));
+  g('o4').textContent=m(2500/(n*f));
+ }
+ ['cl','fe','rt'].forEach(function(i){g(i).addEventListener('input',run)});
+ run();
 })();
 </script>
 </body>
