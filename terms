@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Service | Campaign Architect</title>
+<meta name="description" content="Terms for using the Campaign Architect website and services.">
+<style>
+:root{--bg:#FCFAF4;--ink:#211F1B;--muted:#5E5A52;--green:#1E5C4A;--line:#E6E1D4;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--bg:#121A17;--ink:#E6ECE8;--muted:#A3B1AA;--green:#7FD1B0;--line:#2E3F37}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.02rem/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.w{max-width:720px;margin:0 auto;padding:0 24px}
+header.w{display:flex;justify-content:space-between;align-items:center;padding-top:22px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+a{color:var(--green)}
+.logo{font-weight:800;color:var(--ink);text-decoration:none}
+header a+a{margin-left:18px}
+h1{font-size:2rem;line-height:1.15;letter-spacing:-.02em;margin:38px 0 4px}
+h2{font-size:1.15rem;margin:34px 0 6px}
+.d{color:var(--muted);margin:0 0 24px;font-size:.92rem}
+p,ul{margin:0 0 1em}
+li{margin-bottom:.4em}
+mark{background:#FFE58A;color:#211F1B;padding:0 4px;border-radius:3px}
+footer.w{margin-top:48px;padding-top:20px;padding-bottom:40px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+footer a{white-space:nowrap}.fl{display:flex;flex-wrap:wrap;gap:6px 16px}address{font-style:normal;margin:10px 0 4px;line-height:1.5}
+</style>
+</head>
+<body>
+<header class="w"><a class="logo" href="https://portfolio.campaignarchitect.qzz.io/">Campaign Architect</a><nav><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav></header>
+<main class="w">
+<h1>Terms of Service</h1>
+<p class="d">Last updated: November 17, 2026</p>
+<h2>About these terms</h2>
+<p>These terms apply to your use of this website and to enquiries about services from Campaign Architect, operated by Odhiambo Isaya (“we”, “us”). Paid services are governed by these terms together with a written agreement we both accept before work starts. If they conflict, the written agreement applies.</p>
+<h2>What we do</h2>
+<p>We provide done-for-you email sequences, list preparation, sending setup, booking pages and tracking for accounting firms, including The Client Recovery Engine. Descriptions on this website are summaries. The scope of your project is the one in your written agreement.</p>
+<h2>Not professional advice</h2>
+<p>We are not accountants, lawyers or tax advisers. Nothing on this website or in our work is tax, legal or compliance advice, and we do not certify that any campaign is compliant. You are responsible for deciding what use of your client data and communications is permitted for your firm, including confidentiality, consent and email laws such as IRC §7216 and the CAN-SPAM Act, and for taking your own professional advice.</p>
+<h2>Applications and engagement</h2>
+<p>Submitting an application or sending us an email is not an offer or a contract. We may accept or decline any application. Work starts only after we both accept a written agreement and any agreed payment is received.</p>
+<h2>Your responsibilities</h2>
+<p>You agree to give us accurate information, to have the right to share any client data you provide, to review and approve all copy before it is sent, and to respond within the timeframes in your agreement. Nothing is sent in your name without your approval.</p>
+<h2>Fees and refunds</h2>
+<p>Fees, payment timing and any refund or guarantee terms are those in your written agreement and on the offer page at the time you accept.</p>
+<h2>No guarantee of results</h2>
+<p>We do not guarantee that any campaign will produce booked calls, retained clients or revenue. Results depend on your list, your offer, your conversations and market conditions.</p>
+<h2>Intellectual property</h2>
+<p>Once you have paid in full, you may use the final approved copy and materials we create for your firm. We keep ownership of our templates, methods and tools. The content of this website belongs to us and may not be copied or resold without permission.</p>
+<h2>Confidentiality</h2>
+<p>We keep your non-public business information and client data confidential and use it only to provide the services. We sign a confidentiality agreement before you share any client data.</p>
+<h2>Acceptable use</h2>
+<p>Do not misuse this website. That includes attempting to disrupt it, scrape it, gain unauthorized access to it, or use it unlawfully.</p>
+<h2>Disclaimer and liability</h2>
+<p>This website and its information are provided “as is”. To the extent the law allows, we are not liable for indirect or consequential losses, and our total liability for any claim relating to our services is limited to the fees you paid us for those services.</p>
+<h2>Ending an engagement</h2>
+<p>Either of us may end an engagement as set out in the written agreement. You may stop using this website at any time.</p>
+<h2>Governing law</h2>
+<p>These terms are governed by the laws of <mark>[GOVERNING LAW: country or state]</mark>.</p>
+<h2>Changes and contact</h2>
+<p>We may update these terms and will change the date at the top when we do. Questions: <a href="mailto:hello@campaignarchitect.qzz.io">hello@campaignarchitect.qzz.io</a>. Postal address: Jamia Mall, 3rd Floor, Ngong Rd, Nairobi 00101, Kenya.</p>
+</main>
+<footer class="w"><div class="fl"><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Service</a><a href="mailto:hello@campaignarchitect.qzz.io">hello@campaignarchitect.qzz.io</a></div><address>Jamia Mall, 3rd Floor, Ngong Rd<br>Nairobi 00101, Kenya</address>© 2026 Campaign Architect</footer>
+</body>
+</html>
