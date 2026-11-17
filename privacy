@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy | Campaign Architect</title>
+<meta name="description" content="How Campaign Architect collects, uses and protects personal data.">
+<style>
+:root{--bg:#FCFAF4;--ink:#211F1B;--muted:#5E5A52;--green:#1E5C4A;--line:#E6E1D4;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--bg:#121A17;--ink:#E6ECE8;--muted:#A3B1AA;--green:#7FD1B0;--line:#2E3F37}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.02rem/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.w{max-width:720px;margin:0 auto;padding:0 24px}
+header.w{display:flex;justify-content:space-between;align-items:center;padding-top:22px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+a{color:var(--green)}
+.logo{font-weight:800;color:var(--ink);text-decoration:none}
+header a+a{margin-left:18px}
+h1{font-size:2rem;line-height:1.15;letter-spacing:-.02em;margin:38px 0 4px}
+h2{font-size:1.15rem;margin:34px 0 6px}
+.d{color:var(--muted);margin:0 0 24px;font-size:.92rem}
+p,ul{margin:0 0 1em}
+li{margin-bottom:.4em}
+mark{background:#FFE58A;color:#211F1B;padding:0 4px;border-radius:3px}
+footer.w{margin-top:48px;padding-top:20px;padding-bottom:40px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+footer a{white-space:nowrap}.fl{display:flex;flex-wrap:wrap;gap:6px 16px}address{font-style:normal;margin:10px 0 4px;line-height:1.5}
+</style>
+</head>
+<body>
+<header class="w"><a class="logo" href="https://portfolio.campaignarchitect.qzz.io/">Campaign Architect</a><nav><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav></header>
+<main class="w">
+<h1>Privacy Policy</h1>
+<p class="d">Last updated: November 17, 2026</p>
+<h2>Who we are</h2>
+<p>Campaign Architect is operated by Odhiambo Isaya (“we”, “us”). We build email sequences and related systems for accounting firms, including The Client Recovery Engine. Contact: <a href="mailto:hello@campaignarchitect.qzz.io">hello@campaignarchitect.qzz.io</a>. Postal address: Jamia Mall, 3rd Floor, Ngong Rd, Nairobi 00101, Kenya.</p>
+<h2>What we collect</h2>
+<ul>
+<li><b>Applications and enquiries:</b> your name, firm name, email address, number of business clients, email platform, and anything else you write in our form or in an email to us.</li>
+<li><b>Business contact details for outreach:</b> name, business email address, firm name, website and role, taken from public sources such as a firm’s own website, professional directories and LinkedIn.</li>
+<li><b>Client data you share if you hire us:</b> see “Your clients’ data” below.</li>
+<li><b>Technical data:</b> this website is hosted on GitHub Pages, which may log IP addresses and browser details. Our pages load fonts from Google Fonts, which receives your IP address. We do not use advertising cookies or analytics trackers on this website.</li>
+</ul>
+<h2>How we use it</h2>
+<p>To respond to enquiries and applications, to deliver our services, to send business-to-business emails about our services to professional contacts, and to keep records and meet legal obligations. We do not sell personal data.</p>
+<h2>Email outreach and opting out</h2>
+<p>Our outreach emails identify us, include our postal address and give you a way to opt out. Reply “unsubscribe” or use the link in the email. We stop emailing you promptly, and in any case within 10 business days, and we keep your address on a suppression list so we do not contact you again.</p>
+<h2>Your clients’ data</h2>
+<p>If you hire us and share a client list or export, we act on your instructions. We use it only to build your lists and sequences, store it on an encrypted drive, delete it within 30 days of launch or on your request (whichever comes first), and sign a confidentiality agreement before you send anything. You remain responsible for deciding what use of that data is permitted, including any consent or confidentiality rules that apply to your firm.</p>
+<h2>Who we share it with</h2>
+<p>Service providers that help us operate: Tally (forms), Brevo (sending email), Google (email and fonts), Cloudflare (DNS and email routing) and GitHub (hosting). They handle data under their own terms and privacy policies. We may disclose information if the law requires it.</p>
+<h2>How long we keep it</h2>
+<p>Only as long as needed for the purposes above. You can ask us to delete your information at any time.</p>
+<h2>Your rights</h2>
+<p>Depending on where you live, for example under the GDPR or US state privacy laws, you may have the right to access, correct, delete or object to the use of your personal data. Email us and we will respond within a reasonable time.</p>
+<h2>Security</h2>
+<p>We use reasonable measures, including access controls and encrypted storage for client lists, but no method of storage or transmission is completely secure.</p>
+<h2>Children</h2>
+<p>Our services are for businesses and are not directed at children.</p>
+<h2>Changes</h2>
+<p>We may update this policy and will change the date at the top when we do.</p>
+</main>
+<footer class="w"><div class="fl"><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Service</a><a href="mailto:hello@campaignarchitect.qzz.io">hello@campaignarchitect.qzz.io</a></div><address>Jamia Mall, 3rd Floor, Ngong Rd<br>Nairobi 00101, Kenya</address>© 2026 Campaign Architect</footer>
+</body>
+</html>
